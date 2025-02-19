@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*xMuIOwjliGUPjkzukeWKfw.jpeg');
+            /* Replace with your image URL */
+
+            /* Set a specific height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content {
+            background-color: #282E34;
+            padding: 50px 0;
+        }
+
+        .content h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /*  Optional:  Add more sections with parallax backgrounds */
+        .parallax2 {
+            background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*xMuIOwjliGUPjkzukeWKfw.jpeg");
+            /* Replace with another image URL */
+            height: 500px;
+            /* Adjust height as needed */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Global Styles - Marketing Emphasis */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #007bff;
+            /* Eye-catching color */
+        }
+
+        /* Flexbox Grid Container */
+        .testimonials-grid {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+            /* Center items horizontally */
+        }
+
+        /* Testimonial Cell */
+        .testimonial-cell {
+            flex: 1 1 100%;
+            /* Mobile-first: 100% width */
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #2bab57;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            /* Subtle shadow */
+        }
+
+        .testimonial-cell p {
+            margin-bottom: 1rem;
+        }
+
+
+        /* Calligraphic Emphasis on First Paragraph */
+        .testimonial-cell p:first-of-type {
+            font-family: 'Brush Script MT', cursive;
+            /* Or any calligraphic font */
+            font-size: 1.2rem;
+        }
+
+        .testimonial-cell p:first-of-type:first-letter {
+            font-size: 3rem;
+            /* Huge first letter */
+            font-weight: bold;
+            color: #b1ffcd;
+            float: left;
+            margin-right: 5px;
+            line-height: 1;
+        }
+
+
+        /* Media Queries for Responsiveness */
+        @media (min-width: 768px) {
+
+            /* Medium screens and up */
+            .testimonials-grid {
+                padding: 30px;
+            }
+
+            .testimonial-cell {
+                flex: 1 1 45%;
+                /* Two columns */
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            /* Large screens and up */
+            .testimonial-cell {
+                flex: 1 1 22%;
+                /* Four columns */
+            }
+        }
+
+        .testimonial-cell p {
+            color: #000000;
+        }
+
+        /* Author Styling */
+        .testimonial-cell p:last-of-type {
+            text-align: right;
+            font-style: italic;
+            color: #b4ff00;
+        }
+
+
+        /* Marketing Touches - Consider these additions */
+        h2::after {
+            /* Underline effect for the heading */
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;
+            margin: 10px auto 0;
+        }
+
+        .testimonial-cell:hover {
+            /* Subtle hover effect */
+            transform: translateY(-3px);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        main section:nth-of-type(2) {
+            background-color: #041221 !important;
+            color: #1d7777 !important;
+        }
+
+        main section:nth-of-type(2) h2 {
+            color: #c3fffa;
+        }
+
+        main section:nth-of-type(2) h2::after {
+            background-color: #ff8d00;
+        }
+
+        main section:nth-of-type(2) main section:nth-of-type(3) main section:nth-of-type(4)
+    </style>
+</head>
+
+<body>
+    <div class="nav-main">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand font-weight-bold" href="index.html">art.studio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html">Project</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--end:Nav -->
+        </div>
+    </div>
+    <!--end:Navigation -->
+    <main role="main">
+
+        <section>
+
+            <div class="parallax">
+                <div class="content">
+                    <h2>Welcome to My Parallax Website</h2>
+                    <p>This is a simple example of a parallax scrolling effect. The background image is fixed as you
+                        scroll, creating a sense of depth.</p>
+                </div>
+                <div class="row d-flex align-items-center">
+                        <div class="col-md-6">
+                            <figure><img src="./assets/img/photo-1558118720-fa5cdebe6b3a.jpg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="col-md-6 pl-lg-5 pl-md-5">
+                            <h2>
+                                I’m Irena, a Psychotherapist, Master NLP Practitioner, Master Reiki Practitioner and
+                                Herbalist.
+                            </h2>
+                            <p class="lead mt-4">
+
+                            <section>
+                                <h1>Welcome!</h1>
+                                <p>With a deep passion for holistic
+                                    healing, I combine various techniques to support your mental, physical, and emotional
+                                    well-being. Drawing on my expertise in
+                                    Neuro-Linguistic Programming (NLP), psychology, energy healing, and herbalism, I take a
+                                    comprehensive approach to guide you
+                                    toward balance and healing.</p>
+
+                                <p>I believe that true transformation occurs when we address all three aspects of our
+                                    existence: mind, body, and soul. Whether you’re seeking relief from emotional stress,
+                                    physical discomfort, or a desire for deeper spiritual connection, I work with you to
+                                    uncover the root causes of challenges and create personalized healing strategies.</p>
+
+                                <p>Explore this space for support, insight, and empowerment on your journey to wholeness.
+                                    Together, we’ll unlock your potential and guide you to the best version of yourself.</p>
+                            </section>
+
+                            <hr class="mt-5">
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <p><strong>ATLANTIC LAW SCHOOL</strong>
+                                        <br>Juris Doctor, 1997
+                                    </p>
+                                    <p><strong>IVY UNIVERSITY</strong>
+                                        <br>B.A., Film &amp; Music, 1994
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Associations</strong>
+                                        <br>
+                                    <p>• ABCD Bar Association, Member
+                                        <br>• IP Law for Creatives Association, Member-at-Large
+                                        <br>• Civil Rights Conservation, Secretary
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+
+        </section>
+
+
+        <section class="pt-4">
+            <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6">
+                            <figure><img src="./assets/img/photo-1558118720-fa5cdebe6b3a.jpg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="col-md-6 pl-lg-5 pl-md-5">
+                            <h2>
+                                I’m Irena, a Psychotherapist, Master NLP Practitioner, Master Reiki Practitioner and
+                                Herbalist.
+                            </h2>
+                            <p class="lead mt-4">
+
+                            <section>
+                                <h1>Welcome!</h1>
+                                <p>With a deep passion for holistic
+                                    healing, I combine various techniques to support your mental, physical, and emotional
+                                    well-being. Drawing on my expertise in
+                                    Neuro-Linguistic Programming (NLP), psychology, energy healing, and herbalism, I take a
+                                    comprehensive approach to guide you
+                                    toward balance and healing.</p>
+
+                                <p>I believe that true transformation occurs when we address all three aspects of our
+                                    existence: mind, body, and soul. Whether you’re seeking relief from emotional stress,
+                                    physical discomfort, or a desire for deeper spiritual connection, I work with you to
+                                    uncover the root causes of challenges and create personalized healing strategies.</p>
+
+                                <p>Explore this space for support, insight, and empowerment on your journey to wholeness.
+                                    Together, we’ll unlock your potential and guide you to the best version of yourself.</p>
+                            </section>
+
+                            <hr class="mt-5">
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <p><strong>ATLANTIC LAW SCHOOL</strong>
+                                        <br>Juris Doctor, 1997
+                                    </p>
+                                    <p><strong>IVY UNIVERSITY</strong>
+                                        <br>B.A., Film &amp; Music, 1994
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Associations</strong>
+                                        <br>
+                                    <p>• ABCD Bar Association, Member
+                                        <br>• IP Law for Creatives Association, Member-at-Large
+                                        <br>• Civil Rights Conservation, Secretary
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="parallax2">
+
+                </div>
+        </section>
+        <section class="pt-4">
+            <div class="container">
+                <section>
+                    <h2>Psychotherapy & NLP Skills</h2>
+                    <p>My background as a psychotherapist and Master NLP Practitioner allows me to provide targeted
+                        support for emotional and mental well-being. I utilize proven techniques to help you overcome
+                        challenges, shift limiting beliefs, and achieve personal growth. By integrating NLP strategies,
+                        I can assist you in reprogramming negative thought patterns and creating positive change in your
+                        life.</p>
+                </section>
+
+                <section>
+                    <h2>Reiki Master Skills</h2>
+                    <p>As a Master Reiki Practitioner, I am deeply committed to helping you unlock your natural ability
+                        to heal through the gentle, yet powerful energy of Reiki. With years of training and experience,
+                        I guide you through a holistic healing process that focuses on restoring balance and harmony to
+                        your mind, body, and spirit. Reiki works by channeling universal life energy into your body,
+                        allowing the energy to flow freely and remove blockages that may be causing physical, emotional,
+                        or mental distress. This simple yet transformative process promotes relaxation, reduces stress,
+                        and enhances overall well-being. Whether you are dealing with anxiety, physical discomfort,
+                        emotional challenges, or simply need to recharge, I combine my expertise in Reiki with other
+                        therapeutic modalities to provide a personalized healing experience. My mission is to help you
+                        achieve a sense of peace, clarity, and vitality—empowering you to live your best life.</p>
+                </section>
+
+                <section>
+                    <h2>Herbalist Skills</h2>
+                    <p>As a Herbalist, I am passionate about using the healing power of nature to support your overall
+                        well-being. Drawing on the wisdom of plants and herbs, I offer personalized remedies designed to
+                        nourish and restore balance to your body and mind. Herbal medicine has been used for centuries
+                        to promote healing, alleviate symptoms, and maintain health in a natural, holistic way. With my
+                        knowledge and experience in herbalism, I carefully craft blends tailored to meet your specific
+                        needs, whether you're seeking relief from stress or boosting your immune system.</p>
+                </section>
+            </div>
+        </section>
+        <section class="pt-4">
+            <div class="container">
+                <h2>What People Are Saying...Transform Your Life Today!</h2>
+
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-cell">
+                        <p>"Before working with Irena, my 10-year-old daughter struggled with frequent panic attacks.
+                            She would often feel overwhelmed and anxious, which affected her daily life and
+                            relationships. As a mother, it was heart breaking to watch her go through this."</p>
+                        <p>"After just a few sessions with Irena, we began to notice significant changes. Not only did
+                            my daughter's panic attacks stop, but her overall mood improved, and she became noticeably
+                            happier. She started feeling more confident, and her interactions with family and friends
+                            became more positive and connected"</p>
+                        <p>"I'm so grateful for the care and support Irena provided. She has truly made a difference in
+                            our lives."</p>
+                        <p>— A Grateful Mother</p>
+                    </div>
+
+                    <div class="testimonial-cell">
+                        <p>"I had been struggling with depression for a long time and felt stuck in both my personal and
+                            professional life. After years of considering medication, I decided to try a different
+                            approach and sought help from Irena. In just six sessions, everything started to change."
+                        </p>
+                        <p>"Not only did I start feeling better mentally and emotionally, but I also received a
+                            promotion at work that I never thought possible. My confidence grew, and I found the
+                            strength to build a meaningful relationship, something I had always longed for but couldn’t
+                            achieve while struggling with my depression."</p>
+                        <p>"What I’m most grateful for is that I didn’t have to resort to medication. Irena’s holistic
+                            approach to healing, which combined psychological techniques and energy work, helped me find
+                            the balance I needed within myself. I feel like I’ve regained control of my life, and I’m
+                            happier than I’ve been in years."</p>
+                        <p>"I’m incredibly thankful for Irena’s support—she truly made a lasting difference in my life."
+                        </p>
+                        <p>— A 40-Year-Old Client</p>
+                    </div>
+
+                    <div class="testimonial-cell">
+                        <p>"At 59, I had been dealing with persistent knee pain for months, and it was affecting my
+                            everyday life. Simple activities, like walking or attending events, became difficult. I had
+                            tried various treatments but nothing seemed to work."</p>
+                        <p>"Then, I decided to try Reiki with Irena. After just a few sessions, I was amazed by the
+                            results. The pain in my knee significantly decreased, and I felt more mobile and at ease.
+                            For the first time in months, I was able to attend a family party without
+                            discomfort—something I thought would be impossible."</p>
+                        <p>"I’m so grateful for Irena’s healing approach. Not only did she help alleviate my knee pain,
+                            but I also felt a renewed sense of energy and well-being. It’s incredible how something so
+                            gentle can have such a powerful impact"</p>
+                        <p>— A 59-Year-Old Client</p>
+                    </div>
+
+                    <div class="testimonial-cell">
+                        <p>"At 42, I was feeling overwhelmed by stress and struggling with a lack of balance in my life.
+                            I had trouble sleeping, and my mind was constantly racing. I decided to try Reiki with
+                            Irena, and the results have been life-changing."</p>
+                        <p>"After just a few sessions, I felt an incredible shift. I became more calm, balanced, and
+                            happy. Reiki helped me release the emotional tension I had been carrying, and I noticed I
+                            was sleeping much better at night. I now wake up feeling rested and at peace."</p>
+                        <p>"Irena’s approach is gentle yet incredibly powerful. Thanks to her healing work, I feel more
+                            grounded and connected to myself. I’m truly grateful for the peace and clarity I’ve found
+                            through Reiki with Irena."</p>
+                        <p>— A 42-Year-Old Client</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="pt-4">
+            <div class="container">
+
+            </div>
+        </section>
+        <section class="pt-4">
+            <div class="container">
+
+                <!-- end:col -->
+            </div>
+            <hr class="mt-5">
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="position-relative"></footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.other.js"></script>
+</body>
+
+</html>
