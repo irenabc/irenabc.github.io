@@ -3,73 +3,16 @@
 
 <head>
     <style>
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font-family: sans-serif;
-            color: #fff;
-            text-align: center;
-        }
 
-        .parallax {
-            /* The image used */
-            background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*xMuIOwjliGUPjkzukeWKfw.jpeg');
-            /* Replace with your image URL */
-
-            /* Set a specific height */
-            height: 100%;
-
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .content {
-            background-color: #282E34;
-            padding: 50px 0;
-        }
-
-        .content h2 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /*  Optional:  Add more sections with parallax backgrounds */
         .parallax2 {
             background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*xMuIOwjliGUPjkzukeWKfw.jpeg");
-            /* Replace with another image URL */
-            height: 500px;
-            /* Adjust height as needed */
+            height: 70vh;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* Global Styles - Marketing Emphasis */
         body {
             font-family: sans-serif;
             line-height: 1.6;
@@ -84,92 +27,60 @@
             margin-bottom: 2rem;
             font-size: 2.5rem;
             color: #007bff;
-            /* Eye-catching color */
         }
 
-        /* Flexbox Grid Container */
         .testimonials-grid {
             display: flex;
             flex-wrap: wrap;
             padding: 20px;
             justify-content: center;
-            /* Center items horizontally */
         }
 
-        /* Testimonial Cell */
         .testimonial-cell {
-            flex: 1 1 100%;
-            /* Mobile-first: 100% width */
             padding: 20px;
             margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #2bab57;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            /* Subtle shadow */
+            border: 1px solid #bfa869;
+            border-radius: 3px;
+            background-color: #303939;
+            box-shadow: 0 2px 5px rgb(150 187 184);
         }
 
         .testimonial-cell p {
             margin-bottom: 1rem;
         }
 
-
-        /* Calligraphic Emphasis on First Paragraph */
         .testimonial-cell p:first-of-type {
             font-family: 'Brush Script MT', cursive;
-            /* Or any calligraphic font */
             font-size: 1.2rem;
         }
 
         .testimonial-cell p:first-of-type:first-letter {
             font-size: 3rem;
-            /* Huge first letter */
             font-weight: bold;
-            color: #b1ffcd;
+            color: #fae4a3;
             float: left;
             margin-right: 5px;
             line-height: 1;
         }
 
-
-        /* Media Queries for Responsiveness */
         @media (min-width: 768px) {
 
-            /* Medium screens and up */
             .testimonials-grid {
                 padding: 30px;
-            }
-
-            .testimonial-cell {
-                flex: 1 1 45%;
-                /* Two columns */
-            }
-        }
-
-        @media (min-width: 992px) {
-
-            /* Large screens and up */
-            .testimonial-cell {
-                flex: 1 1 22%;
-                /* Four columns */
             }
         }
 
         .testimonial-cell p {
-            color: #000000;
+            color: #c9c5be;
         }
 
-        /* Author Styling */
         .testimonial-cell p:last-of-type {
             text-align: right;
             font-style: italic;
-            color: #b4ff00;
+            color: #ffdf82;
         }
 
-
-        /* Marketing Touches - Consider these additions */
         h2::after {
-            /* Underline effect for the heading */
             content: '';
             display: block;
             width: 50px;
@@ -179,138 +90,29 @@
         }
 
         .testimonial-cell:hover {
-            /* Subtle hover effect */
             transform: translateY(-3px);
             transition: transform 0.2s ease-in-out;
         }
 
-        main section:nth-of-type(2) {
-            background-color: #041221 !important;
-            color: #1d7777 !important;
+        #about {
+            min-height: 100vh;
         }
-
-        main section:nth-of-type(2) h2 {
-            color: #c3fffa;
+        
+        #skills .container{
+            margin-top: 15vh;
         }
-
-        main section:nth-of-type(2) h2::after {
-            background-color: #ff8d00;
-        }
-
-        main section:nth-of-type(2) main section:nth-of-type(3) main section:nth-of-type(4)
     </style>
 </head>
 
 <body>
-    <div class="nav-main">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand font-weight-bold" href="index.html">art.studio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="project.html">Project</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav ml-auto">
 
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!--end:Nav -->
-        </div>
-    </div>
-    <!--end:Navigation -->
     <main role="main">
-
-        <section>
-
-            <div class="parallax">
-                <div class="content">
-                    <h2>Welcome to My Parallax Website</h2>
-                    <p>This is a simple example of a parallax scrolling effect. The background image is fixed as you
-                        scroll, creating a sense of depth.</p>
-                </div>
-                <div class="row d-flex align-items-center">
-                        <div class="col-md-6">
-                            <figure><img src="./assets/img/photo-1558118720-fa5cdebe6b3a.jpg" alt="" class="img-fluid">
-                            </figure>
-                        </div>
-                        <div class="col-md-6 pl-lg-5 pl-md-5">
-                            <h2>
-                                I’m Irena, a Psychotherapist, Master NLP Practitioner, Master Reiki Practitioner and
-                                Herbalist.
-                            </h2>
-                            <p class="lead mt-4">
-
-                            <section>
-                                <h1>Welcome!</h1>
-                                <p>With a deep passion for holistic
-                                    healing, I combine various techniques to support your mental, physical, and emotional
-                                    well-being. Drawing on my expertise in
-                                    Neuro-Linguistic Programming (NLP), psychology, energy healing, and herbalism, I take a
-                                    comprehensive approach to guide you
-                                    toward balance and healing.</p>
-
-                                <p>I believe that true transformation occurs when we address all three aspects of our
-                                    existence: mind, body, and soul. Whether you’re seeking relief from emotional stress,
-                                    physical discomfort, or a desire for deeper spiritual connection, I work with you to
-                                    uncover the root causes of challenges and create personalized healing strategies.</p>
-
-                                <p>Explore this space for support, insight, and empowerment on your journey to wholeness.
-                                    Together, we’ll unlock your potential and guide you to the best version of yourself.</p>
-                            </section>
-
-                            <hr class="mt-5">
-                            <div class="row mt-5">
-                                <div class="col-md-6">
-                                    <p><strong>ATLANTIC LAW SCHOOL</strong>
-                                        <br>Juris Doctor, 1997
-                                    </p>
-                                    <p><strong>IVY UNIVERSITY</strong>
-                                        <br>B.A., Film &amp; Music, 1994
-                                    </p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p><strong>Associations</strong>
-                                        <br>
-                                    <p>• ABCD Bar Association, Member
-                                        <br>• IP Law for Creatives Association, Member-at-Large
-                                        <br>• Civil Rights Conservation, Secretary
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-
-
-
-        </section>
-
-
-        <section class="pt-4">
+        <section id="about" class="pt-4">
             <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-6">
-                            <figure><img src="./assets/img/photo-1558118720-fa5cdebe6b3a.jpg" alt="" class="img-fluid">
-                            </figure>
+                            <figure><img src="./assets/img/profile/1.jpg" alt="" class="img-fluid"></figure>
                         </div>
                         <div class="col-md-6 pl-lg-5 pl-md-5">
                             <h2>
@@ -358,49 +160,79 @@
                             </div>
                         </div>
                     </div>
-                <div class="parallax2">
-
-                </div>
         </section>
-        <section class="pt-4">
+
+        <section id="background"><div class="parallax2"></div></section>
+
+        <section id="skills" class="pt-4">
+
             <div class="container">
-                <section>
-                    <h2>Psychotherapy & NLP Skills</h2>
-                    <p>My background as a psychotherapist and Master NLP Practitioner allows me to provide targeted
-                        support for emotional and mental well-being. I utilize proven techniques to help you overcome
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6">
+                        <figure><img src="./assets/img/herbs/1.jpg" alt="" class="img-fluid"></figure>
+                    </div>
+                    <div class="col-md-6 pl-lg-5 pl-md-5">
+                        <h2>Herbalism</h2>
+                        <p>As a Herbalist, I am passionate about using the healing power of nature to support your overall
+                            well-being. Drawing on the wisdom of plants and herbs, I offer personalized remedies designed to
+                            nourish and restore balance to your body and mind. </p>
+                            <p>Herbal medicine has been used for centuries
+                            to promote healing, alleviate symptoms, and maintain health in a natural, holistic way. With my
+                            knowledge and experience in herbalism, I carefully craft blends tailored to meet your specific
+                            needs, whether you're seeking relief from stress or boosting your immune system.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 pl-lg-5 pl-md-5">
+                        <h2>Psychotherapy & NLP</h2>
+                        
+                        <p>My background as a psychotherapist and Master NLP Practitioner allows me to provide targeted
+                        support for emotional and mental well-being.</p>
+
+                        <p>I utilize proven techniques to help you overcome
                         challenges, shift limiting beliefs, and achieve personal growth. By integrating NLP strategies,
                         I can assist you in reprogramming negative thought patterns and creating positive change in your
                         life.</p>
-                </section>
+
+                        
+                        <h2>Reiki Master</h2>
+                        <p>As a Master Reiki Practitioner, I am deeply committed to helping you unlock your natural ability
+                            to heal through the gentle, yet powerful energy of Reiki.</p>
+                        <p>With years of training and experience, I guide you through a holistic healing process that focuses 
+                            on restoring balance and harmony to your mind, body, and spirit.</p>
+
+                        <p>Reiki works by channeling universal life energy into your body, allowing the energy to flow freely 
+                            and remove blockages that may be causing physical, emotional,
+                            or mental distress. This simple yet transformative process promotes relaxation, reduces stress,
+                            and enhances overall well-being. </p>
+
+                            
+                        <p>Whether you are dealing with anxiety, physical discomfort,
+                            emotional challenges, or simply need to recharge, I combine my expertise in Reiki with other
+                            therapeutic modalities to provide a personalized healing experience.</p>
+                            
+                        <h4>&quot;My mission is to help you achieve a sense of peace, clarity, and vitality—empowering you to live your best life.&quot;</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <figure><img src="./assets/img/profile/2.jpg" alt="" class="img-fluid"></figure>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
 
                 <section>
-                    <h2>Reiki Master Skills</h2>
-                    <p>As a Master Reiki Practitioner, I am deeply committed to helping you unlock your natural ability
-                        to heal through the gentle, yet powerful energy of Reiki. With years of training and experience,
-                        I guide you through a holistic healing process that focuses on restoring balance and harmony to
-                        your mind, body, and spirit. Reiki works by channeling universal life energy into your body,
-                        allowing the energy to flow freely and remove blockages that may be causing physical, emotional,
-                        or mental distress. This simple yet transformative process promotes relaxation, reduces stress,
-                        and enhances overall well-being. Whether you are dealing with anxiety, physical discomfort,
-                        emotional challenges, or simply need to recharge, I combine my expertise in Reiki with other
-                        therapeutic modalities to provide a personalized healing experience. My mission is to help you
-                        achieve a sense of peace, clarity, and vitality—empowering you to live your best life.</p>
-                </section>
-
-                <section>
-                    <h2>Herbalist Skills</h2>
-                    <p>As a Herbalist, I am passionate about using the healing power of nature to support your overall
-                        well-being. Drawing on the wisdom of plants and herbs, I offer personalized remedies designed to
-                        nourish and restore balance to your body and mind. Herbal medicine has been used for centuries
-                        to promote healing, alleviate symptoms, and maintain health in a natural, holistic way. With my
-                        knowledge and experience in herbalism, I carefully craft blends tailored to meet your specific
-                        needs, whether you're seeking relief from stress or boosting your immune system.</p>
                 </section>
             </div>
         </section>
-        <section class="pt-4">
+
+        <section id="testimonials" class="pt-4">
             <div class="container">
-                <h2>What People Are Saying...Transform Your Life Today!</h2>
+                <h2>What People Are Saying... Transform Your Life Today!</h2>
 
                 <div class="testimonials-grid">
 

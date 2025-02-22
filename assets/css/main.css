@@ -12713,6 +12713,11 @@ h1, h2, h3, h4, h5, h6 {
 /* line 1, src/assets/scss/layout/_nav.scss */
 .nav-main {
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #131415;
+  z-index: 9;
 }
 
 /* line 4, src/assets/scss/layout/_nav.scss */
@@ -12837,7 +12842,7 @@ footer a {
   bottom: 0;
   left: 0;
   z-index: 1;
-  background: #5A2E2E;
+  background: #3bb1c5bf;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .2s ease-in-out;
@@ -12906,5 +12911,3 @@ footer a {
 .project-sidebar img {
   margin-bottom: 60px;
 }
-
-/*# sourceMappingURL=../../../scss */
